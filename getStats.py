@@ -1,12 +1,10 @@
 from youtubestats import YTstats
+from analyseData import *
 
-api_key_21='AIzaSyAUi6yKKl-KSqo08GMapC_aT1EI7GnNP0s'
+api_key_21='******'
 API_KEY=api_key_21
 python_engineer_id = 'UCbXgNpp0jedKWcQiULLbDTA'
 channel_id = python_engineer_id
 
-yt_PE = YTstats(API_KEY, python_engineer_id)
-
-yt_PE.get_channel_statistics()
-yt_PE.get_channel_video_data()
-yt_PE.dump()
+cn=YouTubeAnalysis(API_KEY, python_engineer_id)
+print(cn.get_view_statistics())
